@@ -1,0 +1,233 @@
+.glyphs .glyphicon {
+    font-size: 22px;   
+    color: deepskyblue;
+}
+
+.index-font {
+    font-size: 32px;
+    color: teal;
+    min-width: 205px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+.index-font2 {
+    font-size: 18px;
+    color: saddlebrown;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding-left: 15px;
+    
+}
+
+.social-media-icons {
+    max-height: 60px;
+    max-width: 60px;
+    padding-left: 20px
+    
+}
+
+.prof-image {
+    max-height: 200px;
+    max-width: 200px;
+    padding-left: 18;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    
+}
+
+.prof-image2 {
+    max-height: 400px;
+    max-width: 200px;
+    padding-left: 1;
+    padding-bottom: 60;
+        
+}
+
+.banner-image1 {
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.left {
+  position:fixed; 
+  padding: 10px;
+  top: 0; left: 0; // position to top left of window
+  height:100%; width:210px;
+  background:white;
+  transition: width ease .5s;
+}
+
+
+.button-font {
+    font-size: 18px;
+    
+}
+
+.icon-hover:hover {
+    opacity: 0.7
+    
+}
+
+.btn-hover:hover {
+    background-color: whitesmoke;
+    border-left-color: deepskyblue;
+    
+}
+
+.btn-index {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: .5;
+    font-size: 22px;
+    font-weight: normal;
+    line-height:1.5;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border-left: 5px solid white;
+    border-top: none;
+    border-right: none;
+    border-bottom:none;
+    border-radius: 0px;
+    
+    
+}
+
+.area {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    position: fixed;
+    background: contain;
+    background-color: white;
+    border-right: 1px solid #e3e3e3;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.area-body {
+    
+    padding-top: 0px;
+    padding-left: 210px;
+    padding-right: 10px;
+    margin-bottom: none;
+    background-color: white;
+    border-right: 0px solid #e3e3e3;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.area-body-text {
+    max-width: 100%;
+    align-self: auto;
+    padding-top: 0px;
+    padding-left: 210px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    background-color: white;
+    border-right: 0px solid #e3e3e3;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+ /* BEGIN SOCIAL MEDIA ICON CSS */
+
+ul.side-nav {
+    position:fixed;
+    width:240px;
+    left:-105%;
+    top:0;
+    margin:0;
+    height:100%;
+    padding-bottom:60px;
+    background-color:#FFF;
+    z-index:999;
+    will-change:left
+}
+
+ /* Style all font awesome icons */
+.fa {
+    padding: 30;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    
+    
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+/* Linkedin */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+ /* Accordion Menu CSS */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 999;
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: deepskyblue;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+} 
