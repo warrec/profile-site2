@@ -3,13 +3,283 @@
     color: deepskyblue;
 }
 
+
+
+
+
+/* BEGIN NAVBAR CSS */
+
+ul {
+    
+    list-style-type:none;
+    margin: 0;
+    padding-left: 0;
+    overflow:hidden;
+    background-color: darkorange;
+    font-family: 'Lato', sans-serif;
+    
+    /* navbar drop shadow */
+    -webkit-box-shadow: 0px 4px 13px 3px black;
+    -moz-box-shadow: 0px 4px 13px 3px black;
+    box-shadow: 0px 4px 13px 3px gray;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 56px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkorange;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 4px solid;
+    border-bottom-color: orangered;
+}
+
+
+    /* Shown When ABOVE 768px */
+.showHide { display:none; }
+
+    /* Desktop*/
+    @media screen and (min-width: 768px) {
+    .showHide  { display: block; }
+    #leftside > button { display: none; }
+}
+
+
+    /* Shown When BELOW 768px */
+.showHide-shown { display:none; }
+
+    /* Mobile*/
+    @media screen and (max-width: 767px) {
+    .showHide-shown  { display: block; }
+    #leftside > button { display: none; }
+}
+
+   /* Padding for spacer (Need This) */
+.showHide-accordion { 
+    margin-bottom: 150px;
+    }
+
+    /* Mobile*/
+    @media screen and (max-width: 767px) {
+    .showHide-shown  { display: block; }
+    #leftside > button { display: none; }
+    
+}
+
+
+
+.dropbtn {
+    background-color: darkorange;
+    color: white;
+    padding: 12px 45px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> is needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+     /* navbar drop shadow */
+    -webkit-box-shadow: -8px 2px 22px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 2px 22px 2px rgba(0,0,0,0.75);
+    box-shadow: -8px 2px 22px 2px rgba(0,0,0,0.75);
+}
+
+/* Dropdown Content (shown on hover) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkorange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    outline: 1px solid;
+    outline-color: black;
+    text-decoration: none;
+    
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: orangered;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    
+    
+}
+    
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    outline: 2px solid;
+    outline-color: black;
+    
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: darkorange;
+}
+
+/* END NAVBAR CSS */
+
+/* Accordion CSS */
+
+/*Acco*/
+
+
+.ac-container {
+    max-width: 400px;
+}
+
+.ac-container label {
+    height: 30px !important;
+    line-height: 21px !important;
+    font-size: 12px !important;
+    font-family: 'Open Sans','Arial Narrow',Arial,sans-serif !important;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    line-height: 33px;
+    font-size: 22px;
+    background: #fff;
+    background: -moz-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#fff),color-stop(100%,#eaeaea));
+    background: -webkit-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: -o-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: -ms-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: linear-gradient(top,#fff 1%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#eaeaea',GradientType=0 );
+    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),1px 0 0 rgba(255,255,255,0.9) inset,0 2px 2px rgba(0,0,0,0.1);
+    font-size: 12px;
+    height: 30px;
+    line-height: 20px;
+}
+
+.ac-container {
+    width: 100%;
+    margin: 10px auto 30px auto;
+    text-align: left;
+}
+
+.ac-container label:hover {
+    background: #fff;
+}
+
+.ac-container input:checked + label,.ac-container input:checked + label:hover {
+    background: #f1f2f3;
+    color: #666;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),0 2px 2px rgba(0,0,0,0.1);
+    height: 30px;
+    line-height: 21px;
+    font-size: 13px;
+}
+
+.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+    background: transparent url(../images/arrow_down.png) no-repeat center center;
+}
+
+.ac-container input:checked + label:hover:after {
+    background-image: url(../images/arrow_up.png);
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container article {
+    background: rgba(255,255,255,0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+    font-style: normal;
+    color: #777;
+    line-height: 23px;
+    font-size: 10px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    font: normal normal 12px 'Open Sans';
+}
+
+.ac-container input:checked ~ article {
+    -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+    -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+    -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+    -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+    transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+    box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
+}
+
+.ac-container input:checked ~ article.ac-small {
+    height: 140px;
+}
+
+.ac-container input:checked ~ article.ac-medium {
+    height: 180px;
+}
+
+.ac-container input:checked ~ article.ac-large {
+    height: 230px;
+}
+
+/* End Accordion CSS */
+
+
+
 .index-font {
-    font-size: 32px;
+    font-size: 20px;
     color: teal;
-    min-width: 205px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    padding-left: 3px;
 }
 
 .index-font2 {
@@ -28,21 +298,29 @@
     
 }
 
-.prof-image {
-    max-height: 200px;
-    max-width: 200px;
-    padding-left: 18;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-right: 10px;
+.img-circle {
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+
+}
+
+.nav-images {
+    background-image: url(https://cdn.rawgit.com/warrec/profile-site2/c7163bd0/images/prof_pic_main.png);
+    height: 548px;
+    width: 731px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
     
 }
 
-.prof-image2 {
-    max-height: 400px;
-    max-width: 200px;
-    padding-left: 1;
-    padding-bottom: 60;
+.prof-image1 {
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    border: 4px solid skyblue;
         
 }
 
@@ -203,31 +481,4 @@ ul.side-nav {
     color: white;
 }
 
- /* Accordion Menu CSS */
-
- /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 999;
-    background-color: #eee;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: deepskyblue;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-} 
+ 
