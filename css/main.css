@@ -3,9 +3,46 @@
     color: deepskyblue;
 }
 
+body {
+    background-image: url("https://cdn.rawgit.com/warrec/profile-site2/7ede297d/images/site-bg.jpg");
+    background-color: black;    
+}
 
+.site-wrapper {
+height: 100vh;
+}
 
+.pagefooter {
+    
+    
+}
 
+.footbtn {
+    background-color: darkorange;
+    color: white;
+    padding: 5px 15;
+    font-size: 15;
+    border: none;
+    cursor: pointer;
+}
+
+.modalbtn {
+    background-color: darkorange;
+    color: white;
+    padding: 15px 15;
+    font-size: 22;
+    border: none;
+    cursor: pointer;
+}
+
+.modalbtn1 {
+    background-color: gray;
+    color: white;
+    padding: 15px 15;
+    font-size: 22;
+    border: none;
+    cursor: pointer;
+}
 
 /* BEGIN NAVBAR CSS */
 
@@ -17,12 +54,6 @@ ul {
     overflow:hidden;
     background-color: darkorange;
     font-family: 'Lato', sans-serif;
-    
-    /* navbar drop shadow */
-    -webkit-box-shadow: 0px 4px 13px 3px black;
-    -moz-box-shadow: 0px 4px 13px 3px black;
-    box-shadow: 0px 4px 13px 3px gray;
-   
 }
 
 li {
@@ -68,14 +99,22 @@ li a:hover {
 
    /* Padding for spacer (Need This) */
 .showHide-accordion { 
-    margin-bottom: 150px;
+    margin-bottom: 180px;
     }
 
-    /* Mobile*/
+    /* Mobile Footer */
     @media screen and (max-width: 767px) {
     .showHide-shown  { display: block; }
     #leftside > button { display: none; }
     
+}
+
+.showHide-footer { 
+    
+    }
+
+    /* Mobile*/
+    @media screen and (max-width: 767px) {
 }
 
 
@@ -93,11 +132,7 @@ li a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
-    
-     /* navbar drop shadow */
-    -webkit-box-shadow: -8px 2px 22px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: -8px 2px 22px 2px rgba(0,0,0,0.75);
-    box-shadow: -8px 2px 22px 2px rgba(0,0,0,0.75);
+
 }
 
 /* Dropdown Content (shown on hover) */
@@ -190,6 +225,7 @@ li a:hover {
 
 .ac-container {
     width: 100%;
+    height: 900;
     margin: 10px auto 30px auto;
     text-align: left;
 }
@@ -315,6 +351,8 @@ li a:hover {
 
     
 }
+
+
 
 .prof-image1 {
     max-height: 80px;

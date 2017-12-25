@@ -1,7 +1,9 @@
 <DOCTYPE! html>
 <html lang="en">
 
+
 <head>
+   
     
     <!-- Begin File Links For JS and CSS -->
 
@@ -17,12 +19,7 @@
     
     <script src="js/main.js"></script>
     
-    <!--Accordion Menu -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <! -- End Accordion -->
+
     
     <!-- End JS and CSS File Links -->
     
@@ -36,9 +33,7 @@
 
 <title>Ty Neargarder: Front End Developer</title>   
     
-    <div id="site-bg"></div>
-    
-    <div id="nav-images"></div>
+    <div class="site-wrapper">    
     
     <ul class="main-nav showHide">
     <li><a class="active" href="#home">Home</a></li>
@@ -62,6 +57,7 @@
 <br>
 <br>
     
+        
     
     <!-- Accordion Menu (uses Bootstrap JS Ref) -->
     
@@ -103,6 +99,78 @@
 			</section>
 
 
+    
+    <footer>
+        
+    <ul class="main-nav showHide"><a href="https://github.com/warrec/profile-site2">
+        
+    <button type="button" class="footbtn">View This Page On Github</button></a>
+        
+    <button type="button" class="footbtn" data-toggle="modal" data-target="#exampleModal" data-whatever="">Leave Site Feedback</button>
+        
+    
+
+     
+        
+    <a href="https://github.com/warrec/profile-site2" id="email"><button type="button" class="footbtn">Contact</button></a>
+    </ul>
+        
+    <script>
+    var parts = ["ty5881", "gmail", "com", "&#46;", "&#64;"];
+    var email = parts[0] + parts[4] + parts[1] + parts[3] + parts[2];
+    document.getElementById("email").innerHTML=email;
+    </script>   
+        
+    <div class="showHide-shown showHide-footer">
+    <button class="dropbtn showHide-shown">Show/Hide Footer</button>
+    <div class="dropdown-content showHide-shown">
+        <a href="#collapse1">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+        <a href="#">Resume</a>
+        </div>
+    </div> 
+        
+        <!-- Email Modal -->
+        
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        
+    <h5 class="modal-title" id="exampleModalLabel">Site Feedback</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+        
+    <div class="modal-body">
+    <form>
+        
+    <div class="form-group">
+    <label for="message-text" class="col-form-label">Message:</label>
+        
+    <textarea class="form-control" id="message-text"></textarea>
+    </div>
+    </form>
+    </div>
+        
+    <div class="modal-footer">
+    <button type="button" class="btn modalbtn1" data-dismiss="modal">Close</button>
+    <button type="button" class="btn modalbtn">Send message</button>
+    </div>
+    </div>
+  </div>
+</div>
+    
+    
+
+       
+    </footer>
+        
+        </div>
     
     </body>
 
