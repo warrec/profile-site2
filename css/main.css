@@ -12,8 +12,10 @@ body {
 height: 100vh;
 }
 
-.pagefooter {
-    
+.cardicons {
+    max-height: 50px;
+    max-width: 50px;
+    padding: 1px;
     
 }
 
@@ -101,7 +103,7 @@ li a:hover {
 
    /* Padding for spacer (Need This) */
 .showHide-accordion { 
-    margin-bottom: 180px;
+    margin-bottom: 0;
     }
 
     /* Mobile Footer */
@@ -194,12 +196,14 @@ li a:hover {
 
 .ac-container {
     max-width: 400px;
+    max-height: 100vh;
 }
 
 .ac-container label {
-    height: 30px !important;
+    height: 35px !important;
+    width: 97vw !important;
     line-height: 21px !important;
-    font-size: 12px !important;
+    font-size: 22px !important;
     font-family: 'Open Sans','Arial Narrow',Arial,sans-serif !important;
     padding: 5px 10px;
     position: relative;
@@ -207,19 +211,11 @@ li a:hover {
     display: block;
     height: 30px;
     cursor: pointer;
-    color: #777;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    color: white;
+    text-shadow: 1px 1px 1px black;
     line-height: 33px;
     font-size: 22px;
-    background: #fff;
-    background: -moz-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#fff),color-stop(100%,#eaeaea));
-    background: -webkit-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: -o-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: -ms-linear-gradient(top,#fff 1%,#eaeaea 100%);
-    background: linear-gradient(top,#fff 1%,#eaeaea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#eaeaea',GradientType=0 );
-    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),1px 0 0 rgba(255,255,255,0.9) inset,0 2px 2px rgba(0,0,0,0.1);
+    background-color: darkorange;
     font-size: 12px;
     height: 30px;
     line-height: 20px;
@@ -228,19 +224,19 @@ li a:hover {
 .ac-container {
     width: 100%;
     height: 900;
-    margin: 10px auto 30px auto;
+    margin: 5px 20px 50px;
     text-align: left;
 }
 
 .ac-container label:hover {
-    background: #fff;
+    background: orange;
 }
 
 .ac-container input:checked + label,.ac-container input:checked + label:hover {
-    background: #f1f2f3;
-    color: #666;
-    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
-    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),0 2px 2px rgba(0,0,0,0.1);
+    background: orange;
+    color: white;
+    text-shadow: 0 1px 1px black;
+    box-shadow: 0 0 0 1px white,0 2px 2px white;
     height: 30px;
     line-height: 21px;
     font-size: 13px;
@@ -253,7 +249,7 @@ li a:hover {
     height: 24px;
     right: 13px;
     top: 7px;
-    background: transparent url(../images/arrow_down.png) no-repeat center center;
+    background-image: url(../images/arrow_down.png) no-repeat center center;
 }
 
 .ac-container input:checked + label:hover:after {
@@ -265,10 +261,11 @@ li a:hover {
 }
 
 .ac-container article {
-    background: rgba(255,255,255,0.5);
+    background: white;
     margin-top: -1px;
     overflow: hidden;
     height: 0;
+    width: 97vw;
     position: relative;
     z-index: 10;
     -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
@@ -279,13 +276,11 @@ li a:hover {
 }
 
 .ac-container article p {
-    font-style: normal;
-    color: #777;
+    color: black;
     line-height: 23px;
-    font-size: 10px;
-    padding: 20px;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-    font: normal normal 12px 'Open Sans';
+    font-size: 22;
+    padding: 5px;
+    font: 12px 'Open Sans' sans-serif;
 }
 
 .ac-container input:checked ~ article {
