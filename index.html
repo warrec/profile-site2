@@ -106,21 +106,13 @@
         
     <button type="button" class="footbtn">View This Page On Github</button></a>
         
-    <button type="button" class="footbtn" data-toggle="modal" data-target="#exampleModal" data-whatever="">Leave Site Feedback</button>
+    <button type="button" class="footbtn" data-toggle="modal" data-target="#exampleModal">Leave Site Feedback</button>
         
-    
-
-     
+    <button type="button" class="footbtn" data-toggle="modal" data-target="#MESSAGE">Contact</button>
         
-    <a href="https://github.com/warrec/profile-site2" id="email"><button type="button" class="footbtn">Contact</button></a>
     </ul>
         
-    <script>
-    var parts = ["ty5881", "gmail", "com", "&#46;", "&#64;"];
-    var email = parts[0] + parts[4] + parts[1] + parts[3] + parts[2];
-    document.getElementById("email").innerHTML=email;
-    </script>   
-        
+    
     <div class="showHide-shown showHide-footer">
     <button class="dropbtn showHide-shown">Show/Hide Footer</button>
     <div class="dropdown-content showHide-shown">
@@ -131,7 +123,7 @@
         </div>
     </div> 
         
-        <!-- Email Modal -->
+        <!-- Site Feedback Modal -->
         
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         
@@ -152,14 +144,52 @@
     <div class="form-group">
     <label for="message-text" class="col-form-label">Message:</label>
         
-    <textarea class="form-control" id="message-text"></textarea>
+    <textarea class="form-control" id="message-text" required="required"></textarea>
     </div>
     </form>
     </div>
         
     <div class="modal-footer">
     <button type="button" class="btn modalbtn1" data-dismiss="modal">Close</button>
-    <button type="button" class="btn modalbtn">Send message</button>
+        
+    <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x74;&#x79;&#x35;&#x38;&#x38;&#x31;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">    
+    <button type="button" class="btn modalbtn submit">Send Feedback</button></a>
+    </div>
+    </div>
+  </div>
+</div>
+        
+    <div class="modal fade" id="MESSAGE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        
+    <h5 class="modal-title" id="exampleModalLabel">Site Notification!</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+        
+    <div class="modal-body">
+    <form>
+        
+    <div class="form-group">
+    <label for="message-text" class="col-form-label"><p>This site uses an encrypted "Mailto:" link that may require further action! If you do not have handlers enabled in your chrome browser please visit the link below to send messages using Gmail.</p><p>If this setting is already enabled click the Send Email Link.</p></label>
+    
+    </div>
+    </form>
+    </div>
+        
+    
+        
+    <div class="modal-footer">
+        
+    <a href="https://developers.google.com/web/updates/2012/02/Getting-Gmail-to-handle-all-mailto-links-with-registerProtocolHandler"><button type="button" class="btn modalbtn mailto-encrypt">Register Protocol Handler</button></a>
+        
+    <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x74;&#x79;&#x35;&#x38;&#x38;&#x31;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"><button type="button" class="btn modalbtn1">Send Email</button></a>
+    
     </div>
     </div>
   </div>
